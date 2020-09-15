@@ -164,8 +164,8 @@ impl Universe {
     pub fn new() -> Universe {
         utils::set_panic_hook();
 
-        let width: u32 = 64;
-        let height: u32 = 64;
+        let width: u32 = 128;
+        let height: u32 = 128;
         let capacity = (width * height) as usize;
 
         let cells = FixedBitSet::with_capacity_and_blocks(capacity, Self::seed(width * height));
