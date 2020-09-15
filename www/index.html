@@ -16,6 +16,11 @@
         align-items: center;
         justify-content: center;
       }
+
+      #fps {
+        white-space: pre;
+        font-family: monospace;
+      }
     </style>
   </head>
   <body>
@@ -25,6 +30,7 @@
     <button id="extinguish">Extinguish</button>
     <canvas id="game-of-life-canvas"></canvas>
     <input id="frame-length" type="range"></input>
+    <div id="fps"></div>
     <script src="./bootstrap.js"></script>
   </body>
 </html>
